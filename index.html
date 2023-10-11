@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFAD</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--Fontaweosome-->
+    <script src="https://kit.fontawesome.com/2ee0245f3d.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <header class="contenedorarriba">
+        <figure id="inicio">
+            <img src="images/Logo Afad Circulo-PhotoRoom.png-PhotoRoom (1).png" alt="Logo AFAD">
+        </figure>
+        <nav id="contenedormenu">
+            <ul>
+                <li><a href="./Pages/recursos.html" id="recursos">RECURSOS</a></li>
+                <li><a href="./Pages/actividades.html" id="actividades">ACTIVIDADES</a></li>
+                <li><a href="./Pages/contacto.html" id="contacto">CONTACTO</a></li>
+                <li><a href="./Pages/adopciones.html" id="adopciones">ADOPCIONES</a></li>
+            </ul>
+        </nav>
+        <a><i id="iconomenu"class="fa-solid fa-bars"></i></a>
+        <button class="boton-regular"><a href="#">DONA</a></button>
+    </header>
+    <main>
+        <div class="contenedor-adopcion">
+            <h1>"El peor pecado que cometemos contra nuestros amigos las animales no es odiarlos, es ser indiferentes con ellos. Esa es la esencia de lo inhumano."
+                (George Bernard Shaw)</h1>
+        </div>
+        <section id="quienes-somos">
+            <div class="quienes-img">
+                <img src="./images/bienvenidos-afad.jpg" alt="voluntarios en el patio principal de AFAD">
+            </div>
+            <div class="quienes-texto">
+            <h2>¿QUIENES SOMOS?</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius qui dignissimos sunt quod id magni, perferendis blanditiis a ipsam illum quo, veniam, minus at. Possimus consequatur odio corrupti sequi enim? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate voluptas modi, ea incidunt magnam dignissimos doloremque ipsum. Voluptatibus tempore veniam sequi dolores obcaecati.</p>
+            </div>
+        </section>
+        <section id="blog">
+            <div class="blog-texto">
+                <h2>BLOG</h2>
+                <br>
+                <p>Apostamos por la educación para procurar el cuidado de los animales y la naturaleza</p>
+            </div>
+            <br>
+            <div class="blog-info">
+                <div class="contenedor-info">
+                    <img src="./images/actividad-afad.jpg" alt="Mesa de información AFAD con voluntarios y público">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio qui dolores quam sequi aspernatur enim, dolor vitae accusantium. Aut consectetur nihil magnam corrupti fuga quod labore pariatur, unde placeat ad!
+                    </p>
+                    <br>
+                        <a href="#">SEGUIR LEYENDO</a>
+                </div>
+                <div class="contenedor-info">
+                    <img src="./images/empleados-afad.jpg" alt="Mesa de información AFAD con voluntarios y público">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio qui dolores quam sequi aspernatur enim, dolor vitae accusantium. Aut consectetur nihil magnam corrupti fuga quod labore pariatur, unde placeat ad!
+                    </p>
+                    <br>
+                        <a href="#">SEGUIR LEYENDO</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="info-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur veniam atque libero, corrupti ullam sint harum alias autem! Quos animi.</p>
+        <div class="contenedor-redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <p>@AFAD</p>
+        </div>
+    </footer>
+
+    <!-- FUNCIONES JAVASCRIPT -->
+    <script>
+        // menu
+        $("#iconomenu").click(function () {
+          $("#contenedormenu").toggleClass("abrirmenu")
+        })
+        </script>
+</body>
+</html>

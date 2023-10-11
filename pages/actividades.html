@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFAD</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--FONTAWEOSOME-->
+    <script src="https://kit.fontawesome.com/2ee0245f3d.js" crossorigin="anonymous"></script>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    </head>
+        <body>
+            <header class="contenedorarriba">
+                <figure id="inicio">
+                    <img src="../images/Logo Afad Circulo-PhotoRoom.png-PhotoRoom (1).png" alt="Logo AFAD">
+                </figure>
+                <nav id="contenedormenu">
+                    <ul>
+                        <li><a href="./Pages/recursos.html" id="recursos">RECURSOS</a></li>
+                        <li><a href="./Pages/actividades.html" id="actividades">ACTIVIDADES</a></li>
+                        <li><a href="./Pages/contacto.html" id="contacto">CONTACTO</a></li>
+                        <li><a href="./Pages/adopciones.html" id="adopciones">ADOPCIONES</a></li>
+                    </ul>
+                </nav>
+                <a><i id="iconomenu"class="fa-solid fa-bars"></i></a>
+                <button class="boton-regular"><a href="#">DONA</a></button>
+            </header>
+    <main>
+    <div class="actividades-info">
+        <h1>ACTIVIDADES</h1>
+        <br>
+        <div class="contenedor-actividad">
+            <img src="../images/mano-a-pata.jpg" alt="flayer actividad mesa a pata">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio qui dolores quam sequi aspernatur enim, dolor vitae accusantium. Aut consectetur nihil magnam corrupti fuga quod labore pariatur, unde placeat ad!
+            </p>
+            <br>
+                <a href="#">SEGUIR LEYENDO</a>
+        </div>
+        <div class="contenedor-actividad">
+            <img src="../images/perritopatita.jpg" alt="flayer actividad mesa a pata">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio qui dolores quam sequi aspernatur enim, dolor vitae accusantium. Aut consectetur nihil magnam corrupti fuga quod labore pariatur, unde placeat ad!
+            </p>
+            <br>
+                <a href="#">SEGUIR LEYENDO</a>
+        </div>
+        <div class="contenedor-actividad">
+            <img src="../images/perritosjaula.jpg" alt="flayer actividad mesa a pata">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio qui dolores quam sequi aspernatur enim, dolor vitae accusantium. Aut consectetur nihil magnam corrupti fuga quod labore pariatur, unde placeat ad!
+            </p>
+            <br>
+                <a href="#">SEGUIR LEYENDO</a>
+        </div>
+    </main>
+    <footer>
+        <p class="info-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur veniam atque libero, corrupti ullam sint harum alias autem! Quos animi consequuntur dolorem.</p>
+        <div class="contenedor-redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <p>@AFAD</p>
+        </div>
+    </footer>
+    <!-- FUNCIONES JAVASCRIPT -->
+    <script>
+        // menu
+        $("#iconomenu").click(function () {
+          $("#contenedormenu").toggleClass("abrirmenu")
+        })
+        </script>
+</body>
+</html>
