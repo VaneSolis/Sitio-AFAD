@@ -1,0 +1,51 @@
+.contenedor-perrito {
+    background-image: url(../images/perrito\ con\ bolsa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    display: flex;
+    justify-content: flex-end;
+}
+.contenedor-perrito h1 {
+    margin: 200px 700px 0px 100px;
+    text-align: center;
+    width: 550px;
+    color: #fff;
+}
+.adopta-canino {
+    text-align: center;
+    margin: 20px;
+}
+.contenedor-adopciones {
+    display: flex;
+    justify-content: space-evenly;
+}
+.info-canino {
+    margin: 0px 20px 15px 50px;
+    display: flex;
+    flex-direction: column;
+    border: 1px black solid;
+    width: 300px;
+    height: 450px;
+}
+.info-canino img {
+    width: 270px;
+    height: 200px;
+    margin: 10px;
+    padding: 5px;
+}
+.info-canino p {
+    margin-left: 15px;
+    width: 250px;
+    text-align: center;
+}
+.info-canino a {
+    text-align: right;
+    margin: 0px 10px 3px 0px;
+}
+.boton-contenedor {
+    display: flex;
+    justify-content: center;
+    margin-right: 140px;
+    margin-bottom: 30px;
+}

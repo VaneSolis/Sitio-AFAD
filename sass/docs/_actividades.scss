@@ -1,0 +1,32 @@
+.actividades-info {
+    margin-top: 50px;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.contenedor-actividad {
+    display: flex;
+    width: 1120px;
+    height: 300px;
+    margin: 100px;
+    margin-top: 25px;
+    background-color: rgb(243, 235, 198);
+
+    img {
+        width: 300px;
+        height: 200px;
+        margin-left: 200px;
+        margin-top: 40px;
+    }
+    p {
+        text-align: left;
+        margin-top: 80px;
+        margin-left: 100px;
+    }
+    a {
+        margin-top: 190px;
+        margin-right: 100px;
+    }
+}
