@@ -35,14 +35,17 @@
     padding: 5px;
 }
 .info-canino p {
-    margin-left: 15px;
+    margin-left: 18px;
     width: 250px;
     text-align: center;
 }
-.info-canino a {
-    text-align: right;
-    margin: 0px 10px 3px 0px;
+
+.link2 {
+    @extend .seguir-leyendo;
+    margin-top: 15px;
+    margin-left: 96px;
 }
+
 .boton-contenedor {
     display: flex;
     justify-content: center;

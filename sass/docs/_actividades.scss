@@ -25,8 +25,9 @@
         margin-top: 80px;
         margin-left: 100px;
     }
-    a {
-        margin-top: 190px;
-        margin-right: 100px;
-    }
+}
+
+.link {
+    @extend .seguir-leyendo;
+    margin-top: 230px;
 }

@@ -9,13 +9,14 @@ figure img {
     width: 100px;
     height: 90px;
     margin-left: 90px;
+    padding-bottom: 15px;
 }
 
 nav ul {
     display: flex;
     gap: 40px;
-    margin-top: 25px;
-    margin-left: 160px;
+    margin-top: 35px;
+    margin-left: 100px;
 
     li {
         list-style: none;
@@ -30,14 +31,18 @@ nav ul {
 }
 
 .boton-regular {
-    margin-top: 20px;
-    margin-left: 200px;
-    width: 150px;
-    height: 30px;
+    margin-top: 30px;
+    margin-left: 110px;
+    width: 120px;
+    height: 40px;
+    border: 2px orange solid;
+    border-radius: 5px;
+    background-color: white;
 
      a {
     text-decoration: none;
-    color: black;
+    color: orange;
+    font-weight: 700;
     }
 }
 

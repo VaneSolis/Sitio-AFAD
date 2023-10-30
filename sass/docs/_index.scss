@@ -48,7 +48,7 @@
 .contenedor-info {
     display: flex;
     width: 1120px;
-    height: 300px;
+    height: 350px;
     margin: 100px;
     margin-top: 25px;
     background-color: rgb(243, 235, 198);
@@ -63,8 +63,20 @@
     text-align: left;
     margin-top: 80px;
     margin-left: 100px;
+    height: 120px;
 }
-.contenedor-info a {
-    margin-top: 190px;
+.seguir-leyendo {
+    display: flex;
+    flex-direction: row;
+    margin-top: 280px;
     margin-right: 100px;
+    width: 150px;
+
+    a {
+        font-size: 11px;
+        font-weight: 700;
+        white-space: nowrap;
+        text-decoration: none;
+        color: #f0a00c;
+    }
 }
