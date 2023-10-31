@@ -14,6 +14,22 @@
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
     margin-bottom: 150px;
+
+    @include tablet {
+        width: 700px;
+        margin-bottom: 90px;
+        gap: 3px;
+    }
+
+    @include mobilel {
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+
+    }
+
 }
 .cuadro-rec {
     display: flex;
@@ -26,6 +42,11 @@
     padding-top:10px;
     border-radius: 3px;
     background-color: rgb(243, 235, 198);
+
+    @include tablet {
+        width: 230px;
+        height: 230px;
+    }
 
     img {
         margin-top: 5px;

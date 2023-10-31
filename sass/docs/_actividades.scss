@@ -14,20 +14,57 @@
     margin-top: 25px;
     background-color: rgb(243, 235, 198);
 
+    @include tablet {
+        width: 750px;
+    }
+
+    @include mobilel {
+        width: 300px;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
     img {
         width: 300px;
         height: 200px;
         margin-left: 200px;
         margin-top: 40px;
+
+        @include tablet {
+            margin-left: 30px;
+        }
+
+        @include mobilel {
+            width: 240px;
+        }
     }
     p {
         text-align: left;
         margin-top: 80px;
-        margin-left: 100px;
+        margin-left: 50px;
+
+        @include tablet {
+            width: 200px;
+            margin-left: 50px;
+        }
+
+        @include mobilel {
+            text-align: center
+        }
     }
 }
 
 .link {
     @extend .seguir-leyendo;
     margin-top: 230px;
+
+    @include tablet {
+        margin-right: 0px;
+        width: 100px;
+    }
+
+    @include mobilel {
+        margin: 30px 0px 20px 95px;
+    }
 }

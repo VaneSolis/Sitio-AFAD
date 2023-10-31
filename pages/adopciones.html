@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AFAD</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <script src="https://kit.fontawesome.com/2ee0245f3d.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+     <!--CSS-->
+     <link rel="stylesheet" href="../css/style.css">
+     <!--Fontaweosome-->
+     <script src="https://kit.fontawesome.com/2ee0245f3d.js" crossorigin="anonymous"></script>
+     <!--Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="contenedorarriba">
         <figure id="inicio">
             <a href="../index.html"><img src="../images/Logo Afad Circulo-PhotoRoom.png-PhotoRoom (1).png" alt="Logo AFAD"></a>
         </figure>
-        <nav>
+        <nav id="contenedormenu">
             <ul>
                 <li><a href="./recursos.html" id="recursos">RECURSOS</a></li>
                 <li><a href="./actividades.html" id="actividades">ACTIVIDADES</a></li>
@@ -23,6 +26,7 @@
                 <li><a href="./adopciones.html" id="adopciones">ADOPCIONES</a></li>
             </ul>
         </nav>
+        <a><i id="iconomenu"class="fa-solid fa-bars"></i></a>
         <button class="boton-regular"><a href="#">DONA</a></button>
     </header>
     <main>
@@ -58,7 +62,7 @@
                 </div>
             </div>
         </section>
-        <div class="boton-contenedor"><button class="boton-regular"><a href="#">VER MÁS</a></button></div>
+        <button class="boton-contenedor"><a href="#">VER MÁS</a></button>
         <br>
         <h1 class="adopta-canino">ADOPTA UN FELINO</h1>
         <br>
@@ -88,7 +92,7 @@
                 </div>
             </div>
         </section>
-        <div class="boton-contenedor"><button class="boton-regular"><a href="#">VER MÁS</a></button></div>
+        <button class="boton-contenedor"><a href="#">VER MÁS</a></button>
     </main>
     <footer>
         <p class="info-footer">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur veniam atque libero, corrupti ullam sint harum alias autem! Quos animi consequuntur dolorem.</p>
@@ -100,5 +104,14 @@
         </div>
         <br>
     </footer>
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- FUNCIONES JAVASCRIPT -->
+    <script>
+        // menu
+        $("#iconomenu").click(function () {
+          $("#contenedormenu").toggleClass("abrirmenu")
+        })
+    </script>
 </body>
 </html>

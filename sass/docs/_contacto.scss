@@ -2,53 +2,99 @@
     text-align: center;
 }
 .mail {
-    width: 900px;
+    width: 700px;
     height: 400px;
     display: flex;
-}
-.mail figure {
-    margin: 20px 0px 0px 200px;
-}
-.mail figure img {
+
+    @include mobilel {
+        flex-direction: column;
+        width: 300px;
+        justify-content: center;
+    }
+
+    figure {
+    margin: 20px 0px 0px 100px;
+
+    @include mobilel {
+        margin-left: 15px;
+    }
+    }
+
+    img {
     width: 300px;
     height: 200px;
-}
-.mail p {
-    margin: 30px 0px 0px 200px;
+
+    @include mobilel {
+        width: 280px;
+    }
+    }
+    p {
+    margin: 30px 0px 0px 60px;
     width: 200px;
+    }
 }
 .redes-sociales {
-    width: 900px;
+    width: 700px;
     height: 400px;
     display: flex;
-}
-.redes-sociales figure {
-    margin: 20px 0px 0px 200px;
-}
-.redes-sociales figure img {
+
+    @include mobilel{
+        width: 300px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    figure {
+    margin: 20px 0px 0px 50px;
+
+    @include mobilel {
+        margin-left: 20px;
+    }
+    }
+
+    img {
     width: 300px;
     height: 200px;
+
+    @include mobilel {
+        width: 260px;
+    }
+    }
 }
+
 .iconos-redes {
     width: 400px;
     height: 200px;
-    margin: 25px 0px 0px 200px;
+    margin: 25px 0px 0px 100px;
+
+    @include mobilel {
+        width: 300px;
+    }
 }
 .fb-in {
     margin: 10px 0px 15px 0px;
     font-size: 22px;
     width: 200px;
     text-align: center;
-}
-.fb-in a {
+
+    @include mobilel {
+        font-size: 18px;
+    }
+     a {
     color: black;
+    }
 }
 .whats {
     margin: 15px 0px 5px 0px;
     font-size: 22px;
     width: 200px;
     text-align: center;
-}
-.whats a {
+
+    @include mobilel {
+        font-size: 18px;
+    }
+    a {
     color: black;
+    }
 }
