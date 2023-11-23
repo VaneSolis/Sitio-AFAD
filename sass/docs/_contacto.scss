@@ -28,6 +28,10 @@
     width: 300px;
     height: 200px;
 
+    @include tablet {
+        width: 280px;
+    }
+
     @include mobilel {
         width: 280px;
     }
@@ -35,6 +39,17 @@
     p {
     margin: 30px 0px 0px 60px;
     width: 200px;
+    }
+
+    .mb-3 {
+        height: 50px;
+        margin-bottom: 5px;
+
+        @include mobilel {
+            width: 100%;
+            margin-bottom: 10px;
+            height: 60px;
+        }
     }
 }
 .redes-sociales {
@@ -60,6 +75,10 @@
     img {
     width: 300px;
     height: 200px;
+
+    @include tablet {
+        width: 280px;
+    }
 
     @include mobilel {
         width: 260px;

@@ -4,6 +4,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    p {
+        @include tablet {
+            width: 80%;
+        }
+    }
 }
 
 #imgrec {
@@ -46,6 +52,10 @@
     @include tablet {
         width: 230px;
         height: 230px;
+    }
+
+    @include mobilel {
+        height: 290px;
     }
 
     img {
