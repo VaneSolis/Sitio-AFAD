@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AFAD</title>
+     <!--Etiquetas SEO-->
+     <meta name="description" content="AFAD es un albergue para perros y gatos que proporciona hogar y cuidados a animales en situación de calle, comparte información sobre cuidado y respeto de los animales y promueve la adopción responsable">
+     <meta name="keywords" content="actividades, voluntariado, apoyo, adopciones, perros, gatos, animales, refugio, albergue animal, adopcion responsable, respeto animal">
+     <!--CSS-->
+     <link rel="stylesheet" href="../css/style.css">
+     <!--Fontaweosome-->
+     <script src="https://kit.fontawesome.com/2ee0245f3d.js" crossorigin="anonymous"></script>
+     <!--Google Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="contenedorarriba">
+        <figure id="inicio">
+            <a href="../index.html"><img src="../images/Logo Afad Circulo-PhotoRoom.png-PhotoRoom (1).png" alt="Logo AFAD"></a>
+        </figure>
+        <nav id="contenedormenu">
+            <ul>
+                <li><a href="./recursos.html" id="recursos">RECURSOS</a></li>
+                <li><a href="./actividades.html" id="actividades">ACTIVIDADES</a></li>
+                <li><a href="./contacto.html" id="contacto">CONTACTO</a></li>
+                <li><a href="./adopciones.html" id="adopciones">ADOPCIONES</a></li>
+            </ul>
+        </nav>
+        <a><i id="iconomenu"class="fa-solid fa-bars"></i></a>
+        <button class="boton-regular"><a href="#">DONA</a></button>
+    </header>
+    <main>
+    <div class="actividades-info">
+        <h1>ACTIVIDADES</h1>
+        <br>
+        <div class="contenedor-actividad">
+            <img src="../images/mano-a-pata.jpg" alt="flayer actividad mesa a pata">
+            <p>Sumate a nuestro evento "de mano a pata" en el que habrán diversas actividades como rifas, concursos y un bazar, el dinero obtenido se destinará a la compra de alimentos, medicamentos y atención médica de nuestros animalitos.
+            </p>
+            <br>
+
+            <div class="link"> <a href="#">SEGUIR LEYENDO <i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+        </div>
+        <div class="contenedor-actividad">
+            <img src="../images/perritopatita.jpg" alt="flayer actividad mesa a pata">
+            <p>Sumate a nuestro voluntariado general, en el que apoyarás bañando perritos, paseandolos, limpiando jaulas y trastes, dandoles comida, dando información a adoptantes, etc.
+            </p>
+            <br>
+                <div class="link"> <a href="#">SEGUIR LEYENDO <i class="fa-solid fa-square-arrow-up-right"></i></a>
+                        </div>
+        </div>
+        <div class="contenedor-actividad">
+            <img src="../images/perritosjaula.jpg" alt="flayer actividad mesa a pata">
+            <p>Voluntariado especializado: eres estudiante de médico veterinario o egresado? puedes apoyar con tus conocmientos en el tratamiento y esterilización de los animales.
+            </p>
+            <br>
+            <div class="link"> <a href="#">SEGUIR LEYENDO <i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="info-footer">Horarios de atención:
+            <br>
+            lunes a viernes:
+            8:00 am - 7:00 pm
+            <br>
+            sábados:
+            8:00 am - 2:00 pm</p>
+        <div class="contenedor-redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <p>@AFAD</p>
+        </div>
+    </footer>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- FUNCIONES JAVASCRIPT -->
+    <script>
+        // menu
+        $("#iconomenu").click(function () {
+          $("#contenedormenu").toggleClass("abrirmenu")
+        })
+        </script>
+</body>
+</html>

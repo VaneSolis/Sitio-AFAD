@@ -1,0 +1,35 @@
+{
+  "name": "sitio-afad",
+  "version": "1.0.0",
+  "description": "Sitio web oficial del Albergue Franciscano del Animal Desprotegido (AFAD)",
+  "main": "index.html",
+  "scripts": {
+    "dev": "sass sass/main.scss css/style.css --watch",
+    "build": "sass sass/main.scss css/style.min.css --style compressed",
+    "serve": "python -m http.server 8000"
+  },
+  "keywords": [
+    "refugio",
+    "animales",
+    "adopción",
+    "perros",
+    "gatos",
+    "AFAD"
+  ],
+  "author": "Vanessa Solís",
+  "license": "MIT",
+  "devDependencies": {
+    "sass": "^1.69.0"
+  },
+  "dependencies": {
+    "jquery": "^3.6.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/sitio-afad.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tu-usuario/sitio-afad/issues"
+  },
+  "homepage": "https://github.com/tu-usuario/sitio-afad#readme"
+}

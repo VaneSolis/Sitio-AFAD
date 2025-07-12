@@ -1,0 +1,137 @@
+/* Animaciones y efectos visuales para AFAD */
+
+/* Animación de aparición */
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efectos hover para botones */
+.boton-regular:hover {
+    background-color: orange;
+    transition: all 0.3s ease;
+}
+
+.boton-regular:hover a {
+    color: white;
+}
+
+/* Efectos hover para enlaces */
+nav ul a:hover {
+    color: orange;
+    transition: color 0.3s ease;
+}
+
+/* Efectos hover para artículos del blog */
+.contenedor-info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* Animación para el menú móvil */
+#contenedormenu {
+    transition: all 0.5s ease;
+}
+
+/* Efectos para imágenes */
+.contenedor-info img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Animación para el hero section */
+.hero-section {
+    animation: slideInFromTop 1s ease-out;
+}
+
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efectos para el formulario */
+.form-control:focus {
+    border-color: orange;
+    box-shadow: 0 0 0 0.2rem rgba(255, 165, 0, 0.25);
+    transition: all 0.3s ease;
+}
+
+/* Animación para botones de envío */
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}
+
+/* Efectos para redes sociales */
+.contenedor-redes a:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease;
+}
+
+/* Animación de carga para imágenes */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img[loading] {
+    opacity: 0.7;
+}
+
+/* Efectos para citas */
+blockquote {
+    position: relative;
+    padding-left: 20px;
+}
+
+blockquote::before {
+    content: '"';
+    font-size: 4em;
+    color: orange;
+    position: absolute;
+    left: -10px;
+    top: -20px;
+    opacity: 0.3;
+}
+
+cite {
+    display: block;
+    font-style: italic;
+    margin-top: 10px;
+    color: #666;
+}
+
+/* Responsive animations */
+@media screen and (max-width: 430px) {
+    .fade-in {
+        animation: fadeInMobile 0.6s ease-in-out;
+    }
+    
+    @keyframes fadeInMobile {
+        from {
+            opacity: 0;
+            transform: translateX(-20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+} 

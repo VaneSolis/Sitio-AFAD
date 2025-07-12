@@ -1,0 +1,85 @@
+.actividades-info {
+    margin-top: 50px;
+
+    @include tablet {
+        width: 95%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+.contenedor-actividad {
+    display: flex;
+    width: 1120px;
+    height: 300px;
+    margin: 100px;
+    margin-top: 25px;
+    background-color: rgb(243, 235, 198);
+
+
+    @include tablet {
+        width: 100%;
+        height: 350px;
+        margin: 0px;
+        margin-top: 15px;
+    }
+
+    @include mobilel {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    img {
+        width: 300px;
+        height: 200px;
+        margin-left: 200px;
+        margin-top: 40px;
+
+        @include tablet {
+            margin-left: 20px;
+        }
+
+        @include mobilel {
+            width: 240px;
+        }
+    }
+    p {
+        text-align: left;
+        margin-top: 80px;
+        margin-left: 50px;
+
+
+        @include tablet {
+            width: 210px;
+            margin-left: 50px;
+            margin-top: 30px;
+        }
+
+        @include mobilel {
+            text-align: center;
+            margin-left: 0px;
+        }
+    }
+}
+
+.link {
+    @extend .seguir-leyendo;
+    margin-top: 230px;
+
+    @include tablet {
+        margin: 250px;
+        margin-left: 0px;
+        margin-right: 50px;
+        width: 80px;
+    }
+
+    @include mobilel {
+        margin: 20px 5px 10px 0px;
+    }
+}

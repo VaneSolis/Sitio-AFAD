@@ -1,0 +1,426 @@
+/* Estilos para la galería de mascotas */
+
+.hero-galeria {
+    background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-galeria::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../images/perritosjaula.jpg') center/cover;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    opacity: 0.9;
+}
+
+.filtros-galeria {
+    padding: 40px 20px;
+    background: #f8f9fa;
+}
+
+.filtros-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    align-items: end;
+}
+
+.filtro-grupo {
+    display: flex;
+    flex-direction: column;
+}
+
+.filtro-grupo label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.filtro-grupo select,
+.filtro-grupo input {
+    padding: 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.filtro-grupo select:focus,
+.filtro-grupo input:focus {
+    outline: none;
+    border-color: #ff6b35;
+    box-shadow: 0 0 0 3px rgba(255, 107, 53, 0.1);
+}
+
+.galeria-mascotas {
+    padding: 60px 20px;
+}
+
+.galeria-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.mascota-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.mascota-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.mascota-imagen {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.mascota-card:hover .mascota-imagen {
+    transform: scale(1.05);
+}
+
+.mascota-info {
+    padding: 20px;
+}
+
+.mascota-nombre {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.mascota-descripcion {
+    color: #666;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.mascota-caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.caracteristica {
+    background: #f8f9fa;
+    color: #666;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.btn-adoptar {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-adoptar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+}
+
+.info-adopcion {
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.info-container h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+    font-size: 2.5rem;
+}
+
+.pasos-adopcion {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.paso {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.paso:hover {
+    transform: translateY(-5px);
+}
+
+.numero-paso {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 20px;
+}
+
+.paso h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+.paso p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 0;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    position: relative;
+    animation: slideIn 0.3s ease;
+}
+
+.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #aaa;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.close:hover {
+    color: #333;
+}
+
+.modal-mascota-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+}
+
+.modal-imagen {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.modal-info {
+    padding: 40px;
+}
+
+.modal-nombre {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.modal-descripcion {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.modal-caracteristicas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.modal-caracteristica {
+    background: #f8f9fa;
+    color: #666;
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.modal-acciones {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-modal {
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-adoptar-modal {
+    background: linear-gradient(135deg, #ff6b35, #f7931e);
+    color: white;
+    border: none;
+}
+
+.btn-contactar-modal {
+    background: white;
+    color: #ff6b35;
+    border: 2px solid #ff6b35;
+}
+
+.btn-modal:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .filtros-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .galeria-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .pasos-adopcion {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 10% auto;
+    }
+    
+    .modal-mascota-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .modal-imagen {
+        height: 250px;
+    }
+    
+    .modal-info {
+        padding: 30px 20px;
+    }
+    
+    .modal-acciones {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-galeria {
+        padding: 60px 15px;
+    }
+    
+    .filtros-galeria,
+    .galeria-mascotas,
+    .info-adopcion {
+        padding: 40px 15px;
+    }
+    
+    .galeria-grid {
+        grid-template-columns: 1fr;
+    }
+} 

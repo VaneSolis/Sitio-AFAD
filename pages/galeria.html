@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Mascotas - AFAD</title>
+    <!--Etiquetas SEO-->
+    <meta name="description" content="Conoce a nuestros amigos peludos disponibles para adopción. Perros y gatos de todas las edades esperando encontrar su hogar para siempre.">
+    <meta name="keywords" content="adopción mascotas, perros, gatos, refugio, AFAD, adopción responsable">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/galeria.css">
+    <!--Fontaweosome-->
+    <script src="https://kit.fontawesome.com/2ee0245f3d.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="contenedorarriba">
+        <figure id="inicio">
+            <a href="../index.html"><img src="../images/Logo Afad Circulo-PhotoRoom.png-PhotoRoom (1).png" alt="Logo AFAD"></a>
+        </figure>
+        <nav id="contenedormenu">
+            <ul>
+                <li><a href="./recursos.html" id="recursos">RECURSOS</a></li>
+                <li><a href="./actividades.html" id="actividades">ACTIVIDADES</a></li>
+                <li><a href="./contacto.html" id="contacto">CONTACTO</a></li>
+                <li><a href="./adopciones.html" id="adopciones">ADOPCIONES</a></li>
+            </ul>
+        </nav>
+        <a><i id="iconomenu" class="fa-solid fa-bars"></i></a>
+        <button class="boton-regular"><a href="./donaciones.html">DONA</a></button>
+    </header>
+
+    <main>
+        <section class="hero-galeria">
+            <div class="hero-content">
+                <h1>Nuestros Amigos Peludos</h1>
+                <p>Conoce a los perros y gatos que esperan encontrar su hogar para siempre</p>
+            </div>
+        </section>
+
+        <section class="filtros-galeria">
+            <div class="filtros-container">
+                <div class="filtro-grupo">
+                    <label for="tipo-mascota">Tipo:</label>
+                    <select id="tipo-mascota">
+                        <option value="todos">Todos</option>
+                        <option value="perro">Perros</option>
+                        <option value="gato">Gatos</option>
+                    </select>
+                </div>
+
+                <div class="filtro-grupo">
+                    <label for="edad-mascota">Edad:</label>
+                    <select id="edad-mascota">
+                        <option value="todas">Todas las edades</option>
+                        <option value="cachorro">Cachorros (0-1 año)</option>
+                        <option value="joven">Jóvenes (1-3 años)</option>
+                        <option value="adulto">Adultos (3-7 años)</option>
+                        <option value="senior">Seniors (7+ años)</option>
+                    </select>
+                </div>
+
+                <div class="filtro-grupo">
+                    <label for="tamaño-mascota">Tamaño:</label>
+                    <select id="tamaño-mascota">
+                        <option value="todos">Todos los tamaños</option>
+                        <option value="pequeño">Pequeño</option>
+                        <option value="mediano">Mediano</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                </div>
+
+                <div class="filtro-grupo">
+                    <label for="buscar-mascota">Buscar:</label>
+                    <input type="text" id="buscar-mascota" placeholder="Nombre o características...">
+                </div>
+            </div>
+        </section>
+
+        <section class="galeria-mascotas">
+            <div class="galeria-grid" id="galeria-grid">
+                <!-- Las mascotas se cargarán dinámicamente -->
+            </div>
+        </section>
+
+        <section class="info-adopcion">
+            <div class="info-container">
+                <h2>¿Cómo adoptar?</h2>
+                <div class="pasos-adopcion">
+                    <div class="paso">
+                        <div class="numero-paso">1</div>
+                        <h3>Conoce a la mascota</h3>
+                        <p>Visita nuestro refugio o contacta con nosotros para conocer mejor a tu futuro compañero.</p>
+                    </div>
+                    <div class="paso">
+                        <div class="numero-paso">2</div>
+                        <h3>Llena el formulario</h3>
+                        <p>Completa nuestro formulario de adopción con tus datos y experiencia con mascotas.</p>
+                    </div>
+                    <div class="paso">
+                        <div class="numero-paso">3</div>
+                        <h3>Entrevista</h3>
+                        <p>Te entrevistaremos para asegurar que sea la mejor opción para ambos.</p>
+                    </div>
+                    <div class="paso">
+                        <div class="numero-paso">4</div>
+                        <h3>¡Adopción!</h3>
+                        <p>Si todo está bien, podrás llevarte a tu nuevo amigo a casa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="p-footer">
+            <p class="info-footer">Horarios de atención:
+                <br>
+                lunes a viernes: 8:00 am - 7:00 pm
+                <br>
+                sábados: 8:00 am - 2:00 pm
+            </p>
+        </div>
+        <div class="contenedor-redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <p>@AFAD</p>
+        </div>
+    </footer>
+
+    <!-- Modal para detalles de mascota -->
+    <div id="modal-mascota" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-content">
+                <!-- Contenido del modal -->
+            </div>
+        </div>
+    </div>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="../js/main.js"></script>
+    <script src="../js/galeria.js"></script>
+</body>
+</html> 

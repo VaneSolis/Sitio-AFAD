@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones - AFAD</title>
+    <!--Etiquetas SEO-->
+    <meta name="description" content="Ayuda a AFAD con tu donación. Tu apoyo nos permite seguir rescatando y cuidando animales en situación de calle. Dona ahora y haz la diferencia.">
+    <meta name="keywords" content="donaciones, ayudar animales, refugio, AFAD, adopción, rescate animal">
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/donaciones.css">
+    <!--Fontaweosome-->
+    <script src="https://kit.fontawesome.com/2ee0245f3d.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="contenedorarriba">
+        <figure id="inicio">
+            <a href="../index.html"><img src="../images/Logo Afad Circulo-PhotoRoom.png-PhotoRoom (1).png" alt="Logo AFAD"></a>
+        </figure>
+        <nav id="contenedormenu">
+            <ul>
+                <li><a href="./recursos.html" id="recursos">RECURSOS</a></li>
+                <li><a href="./actividades.html" id="actividades">ACTIVIDADES</a></li>
+                <li><a href="./contacto.html" id="contacto">CONTACTO</a></li>
+                <li><a href="./adopciones.html" id="adopciones">ADOPCIONES</a></li>
+            </ul>
+        </nav>
+        <a><i id="iconomenu" class="fa-solid fa-bars"></i></a>
+        <button class="boton-regular"><a href="./donaciones.html">DONA</a></button>
+    </header>
+
+    <main>
+        <section class="hero-donaciones">
+            <div class="hero-content">
+                <h1>Tu Donación Salva Vidas</h1>
+                <p>Cada peso que donas nos ayuda a rescatar, alimentar y cuidar a más animales en situación de calle.</p>
+            </div>
+        </section>
+
+        <section class="donacion-opciones">
+            <h2>¿Cómo puedes ayudar?</h2>
+            <div class="opciones-grid">
+                <div class="opcion-donacion">
+                    <div class="icono">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+                    <h3>Donación Mensual</h3>
+                    <p>Conviértete en padrino de nuestros animales con una donación mensual.</p>
+                    <div class="montos">
+                        <button class="monto-btn" data-monto="100">$100</button>
+                        <button class="monto-btn" data-monto="200">$200</button>
+                        <button class="monto-btn" data-monto="500">$500</button>
+                    </div>
+                </div>
+
+                <div class="opcion-donacion">
+                    <div class="icono">
+                        <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <h3>Donación Única</h3>
+                    <p>Haz una donación única para apoyar nuestros proyectos especiales.</p>
+                    <div class="montos">
+                        <button class="monto-btn" data-monto="50">$50</button>
+                        <button class="monto-btn" data-monto="150">$150</button>
+                        <button class="monto-btn" data-monto="300">$300</button>
+                    </div>
+                </div>
+
+                <div class="opcion-donacion">
+                    <div class="icono">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Donación Personalizada</h3>
+                    <p>Elige el monto que desees donar.</p>
+                    <div class="monto-personalizado">
+                        <input type="number" id="montoPersonalizado" placeholder="Ingresa el monto" min="10">
+                        <span class="moneda">MXN</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario-donacion">
+            <h2>Completa tu donación</h2>
+            <form id="formularioDonacion">
+                <div class="form-group">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Correo electrónico *</label>
+                    <input type="email" id="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje (opcional)</label>
+                    <textarea id="mensaje" rows="3" placeholder="¿Por qué quieres donar?"></textarea>
+                </div>
+
+                <div class="metodo-pago">
+                    <h3>Método de pago</h3>
+                    <div class="opciones-pago">
+                        <label class="opcion-pago">
+                            <input type="radio" name="metodoPago" value="paypal" checked>
+                            <span class="checkmark"></span>
+                            <i class="fa-brands fa-paypal"></i>
+                            PayPal
+                        </label>
+                        <label class="opcion-pago">
+                            <input type="radio" name="metodoPago" value="transferencia">
+                            <span class="checkmark"></span>
+                            <i class="fa-solid fa-university"></i>
+                            Transferencia bancaria
+                        </label>
+                        <label class="opcion-pago">
+                            <input type="radio" name="metodoPago" value="efectivo">
+                            <span class="checkmark"></span>
+                            <i class="fa-solid fa-money-bill"></i>
+                            Efectivo en refugio
+                        </label>
+                    </div>
+                </div>
+
+                <div class="resumen-donacion">
+                    <h3>Resumen de tu donación</h3>
+                    <div class="resumen-item">
+                        <span>Monto:</span>
+                        <span id="montoResumen">$0</span>
+                    </div>
+                    <div class="resumen-item">
+                        <span>Método de pago:</span>
+                        <span id="metodoResumen">PayPal</span>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-donar">
+                    <i class="fa-solid fa-heart"></i>
+                    Donar Ahora
+                </button>
+            </form>
+        </section>
+
+        <section class="impacto-donaciones">
+            <h2>El impacto de tu donación</h2>
+            <div class="impacto-grid">
+                <div class="impacto-item">
+                    <div class="icono-impacto">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+                    <h3>$100</h3>
+                    <p>Alimenta a 5 perros por una semana</p>
+                </div>
+                <div class="impacto-item">
+                    <div class="icono-impacto">
+                        <i class="fa-solid fa-syringe"></i>
+                    </div>
+                    <h3>$200</h3>
+                    <p>Vacuna a 2 animales</p>
+                </div>
+                <div class="impacto-item">
+                    <div class="icono-impacto">
+                        <i class="fa-solid fa-home"></i>
+                    </div>
+                    <h3>$500</h3>
+                    <p>Construye un nuevo espacio para animales</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="p-footer">
+            <p class="info-footer">Horarios de atención:
+                <br>
+                lunes a viernes: 8:00 am - 7:00 pm
+                <br>
+                sábados: 8:00 am - 2:00 pm
+            </p>
+        </div>
+        <div class="contenedor-redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <p>@AFAD</p>
+        </div>
+    </footer>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="../js/main.js"></script>
+    <script src="../js/donaciones.js"></script>
+</body>
+</html> 
